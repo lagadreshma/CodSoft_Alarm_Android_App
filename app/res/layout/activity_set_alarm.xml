@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SetAlarmActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Alarm"
+        android:textAllCaps="true"
+        android:textColor="#0A40DD"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numbersSelectorColor="#0A40DD"
+        android:numbersInnerTextColor="#0A40DD"
+        android:headerBackground="#0A40DD"
+        android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/btnChooseAlarmTone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Alarm Tone                   "
+            android:drawableEnd="@drawable/set_rington_btn"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="32dp"
+            android:textColor="#0A40DD"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/setAlarmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Alarm"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_gravity="right"
+        android:layout_margin="50dp"
+        android:background="#0A40DD"/>
+
+</LinearLayout>
